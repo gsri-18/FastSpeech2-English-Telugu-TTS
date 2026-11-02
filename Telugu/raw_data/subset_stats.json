@@ -1,0 +1,16 @@
+{
+ "candidates": 3262,
+ "candidate_hours": 6.206934021990741,
+ "train_utts": 2626,
+ "train_hours": 5.000587858796304,
+ "val_utts": 531,
+ "val_hours": 1.000424108796297,
+ "criteria": {
+  "gender": 1,
+  "min_duration": 1.0,
+  "max_duration": 11.0,
+  "train_hours": 5.0,
+  "val_hours": 1.0,
+  "seed": 1234
+ }
+}

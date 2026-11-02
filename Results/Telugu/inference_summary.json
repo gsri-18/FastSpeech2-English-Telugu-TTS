@@ -1,0 +1,36 @@
+{
+ "checkpoint_step": 6000,
+ "speaker_id": 0,
+ "utterances": {
+  "T1": {
+   "text": "న్యూరోఫార్మకోలాజికల్ పరిశోధనలో నూతన ఔషధాల ప్రభావాన్ని విశ్లేషించారు.",
+   "phones": "n y uu r oo ph aa r m a k oo l aa j i k a l p a r i sh oo dh a n a l oo n uu t a n a au sx a dh aa l a p r a bh aa v aa n n i v i sh l ee sx i ny c aa r u",
+   "seconds": 4.516,
+   "measured_f0_mean_hz": 197.37
+  },
+  "T2a": {
+   "text": "తాడుపై అతని పట్టు చాలా బలంగా ఉంది.",
+   "phones": "t aa dx u p ai a t a n i p a tx tx u c aa l aa b a l a ng g aa u n d i",
+   "seconds": 2.101,
+   "measured_f0_mean_hz": 189.51
+  },
+  "T2b": {
+   "text": "ఆమె పట్టు చీరను ధరించి వేడుకకు వచ్చింది.",
+   "phones": "aa m e p a tx tx u c ii r a n u dh a r i ny c i v ee dx u k a k u v a c c i n d i",
+   "seconds": 2.461,
+   "measured_f0_mean_hz": 182.86
+  },
+  "T3": {
+   "text": "పులి అడ  విలో నిశ్శబ్దంగా నడిచింది.",
+   "phones": "p u l i a dx a v i l oo n i sh sh a b d a ng g aa n a dx i c i n d i",
+   "seconds": 1.881,
+   "measured_f0_mean_hz": 195.1
+  },
+  "T4": {
+   "text": "ఈ సమావేశం 2026 నవంబర్ 12వ తేదీ ఉదయం 10:45 గంటలకు ప్రారంభమవుతుంది, సమయానికి సిద్ధంగా ఉంచండి.",
+   "phones": "ii s a m aa v ee sh a m r e nx dx u v ee l a i r a v ai aa r u n a v a m b a r p a n n e nx dx a v a t ee d ii u d a y a m p a d i g a nx tx a l a n a l a bh ai ai d u n i m i sx aa l a k u p r aa r a m bh a m a v u t u n d i sp s a m a y aa n i k i s i d dh a ng g aa u ny c a nx dx i",
+   "seconds": 7.976,
+   "measured_f0_mean_hz": 184.52
+  }
+ }
+}

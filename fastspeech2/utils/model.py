@@ -17,7 +17,13 @@ def get_model(args, configs, device, train=False):
             train_config["path"]["ckpt_path"],
             "{}.pth.tar".format(args.restore_step),
         )
-        ckpt = torch.load(ckpt_path)
+        if not train and not os.path.exists(ckpt_path):
+            # [MOD] fall back to the fp16 weights committed to the repo (made by
+            # scripts/export_inference_ckpt.py). load_state_dict casts them to fp32.
+            ckpt_path = ckpt_path.replace(".pth.tar", "_inference.pth.tar")
+        # [MOD] map_location for CPU and MPS hosts. weights_only=False because the
+        # checkpoint also holds optimizer state (the default changed in torch 2.6)
+        ckpt = torch.load(ckpt_path, map_location=device, weights_only=False)
         model.load_state_dict(ckpt["model"])
 
     if train:
@@ -55,14 +61,16 @@ def get_vocoder(config, device):
         vocoder.mel2wav.eval()
         vocoder.mel2wav.to(device)
     elif name == "HiFi-GAN":
-        with open("hifigan/config.json", "r") as f:
+        # [MOD] paths relative to the hifigan package, not the working directory
+        hifigan_dir = os.path.dirname(os.path.abspath(hifigan.__file__))
+        with open(os.path.join(hifigan_dir, "config.json"), "r") as f:
             config = json.load(f)
         config = hifigan.AttrDict(config)
         vocoder = hifigan.Generator(config)
-        if speaker == "LJSpeech":
-            ckpt = torch.load("hifigan/generator_LJSpeech.pth.tar")
-        elif speaker == "universal":
-            ckpt = torch.load("hifigan/generator_universal.pth.tar")
+        ckpt_name = "generator_{}.pth.tar".format(speaker)
+        ckpt = torch.load(
+            os.path.join(hifigan_dir, ckpt_name), map_location="cpu", weights_only=False
+        )
         vocoder.load_state_dict(ckpt["generator"])
         vocoder.eval()
         vocoder.remove_weight_norm()
@@ -77,7 +85,8 @@ def vocoder_infer(mels, vocoder, model_config, preprocess_config, lengths=None):
         if name == "MelGAN":
             wavs = vocoder.inverse(mels / np.log(10))
         elif name == "HiFi-GAN":
-            wavs = vocoder(mels).squeeze(1)
+            # [MOD] mels may be fp16/bf16 when produced under autocast
+            wavs = vocoder(mels.float()).squeeze(1)
 
     wavs = (
         wavs.cpu().numpy()

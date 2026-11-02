@@ -1,0 +1,1152 @@
+{
+ "spk000": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Nalbari",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk001": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "South 24 Parganas",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk002": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Bodo",
+  "native_place_state": "Assam",
+  "native_place_district": "Kokrajhar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk003": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk004": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Under Graduate Student",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk005": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Gujarati",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Amreli",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Entertainment"
+ },
+ "spk006": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Hindi",
+  "native_place_state": "Madhya Pradesh",
+  "native_place_district": "Khandwa",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk007": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Hindi",
+  "native_place_state": "Rajasthan",
+  "native_place_district": "Ajmer",
+  "highest_qualification": "Under Graduate Student",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk008": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Gulbarga",
+  "highest_qualification": "Senior Secondary Level at School (10+2)",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk009": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Hassan",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk010": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "South Goa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Government"
+ },
+ "spk011": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Darbhanga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk012": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Pathanamthitta",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk013": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Pathanamthitta",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk014": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Marathi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Ratnagiri",
+  "highest_qualification": "Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Social service"
+ },
+ "spk015": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Nepali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Darjeeling",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Entertainment"
+ },
+ "spk016": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Khordha",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Transportation and Logistics"
+ },
+ "spk017": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Punjabi",
+  "native_place_state": "Punjab",
+  "native_place_district": "Patiala",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk018": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Tamil",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Urban",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk019": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Tamil",
+  "native_place_state": "Kerala",
+  "native_place_district": "Thiruvananthapuram",
+  "highest_qualification": "Under Graduate Student",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk020": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Virudhunagar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk021": {
+  "gender": "Female",
+  "age-group": "18-30",
+  "primary_language": "Urdu",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Thane",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk022": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Biswanath",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk023": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kolkata",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk024": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Bodo",
+  "native_place_state": "Assam",
+  "native_place_district": "Kokrajhar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk025": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk026": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Gujarati",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Amreli",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Freelance",
+  "occupation_domain": "Education and Research"
+ },
+ "spk027": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Hindi",
+  "native_place_state": "Goa",
+  "native_place_district": "South Goa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk028": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Gulbarga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk029": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Kashmiri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Srinagar",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk030": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "North Goa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk031": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Darbhanga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Freelance",
+  "occupation_domain": "Information and Media"
+ },
+ "spk032": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Pathanamthitta",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Financial Services (Banking and Insurance)"
+ },
+ "spk033": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Marathi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Pune",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk034": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Nepali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kalimpong",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk035": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Nepali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kalimpong",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Social service"
+ },
+ "spk036": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Cuttack",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Healthcare (Medical &amp; Pharma)"
+ },
+ "spk037": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Punjabi",
+  "native_place_state": "Punjab",
+  "native_place_district": "Patiala",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk038": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Sindhi",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Ahmedabad",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk039": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Chennai",
+  "highest_qualification": "Graduate",
+  "job_category": "Freelance",
+  "occupation_domain": "Education and Research"
+ },
+ "spk040": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Chennai",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk041": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Chennai",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk042": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Telugu",
+  "native_place_state": "Andhra Pradesh",
+  "native_place_district": "West Godavari",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk043": {
+  "gender": "Female",
+  "age-group": "30-45",
+  "primary_language": "Urdu",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Urban",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk044": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "South 24 Parganas",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Financial Services (Banking and Insurance)"
+ },
+ "spk045": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk046": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Hindi",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kolkata",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk047": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Urban",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk048": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "North Goa",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk049": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Darbhanga",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk050": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Marathi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Kolhapur",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk051": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Nepali",
+  "native_place_state": "Assam",
+  "native_place_district": "Kamrup",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk052": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Punjabi",
+  "native_place_state": "Punjab",
+  "native_place_district": "Fatehgarh Sahib",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk053": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Chennai",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk054": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Andhra Pradesh",
+  "native_place_district": "Guntur",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk055": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Andhra Pradesh",
+  "native_place_district": "Krishna",
+  "highest_qualification": "Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk056": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Andhra Pradesh",
+  "native_place_district": "Kurnool",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk057": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Odisha",
+  "native_place_district": "Sambalpur",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk058": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Telangana",
+  "native_place_district": "Hyderabad",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk059": {
+  "gender": "Female",
+  "age-group": "45-60",
+  "primary_language": "Urdu",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Satara",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk060": {
+  "gender": "Female",
+  "age-group": "60+",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Angul",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Social service"
+ },
+ "spk061": {
+  "gender": "Female",
+  "age-group": "60+",
+  "primary_language": "Tamil",
+  "native_place_state": "Madhya Pradesh",
+  "native_place_district": "Ujjain",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk062": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Kamrup Metropolitan",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk063": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Lakhimpur",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk064": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kolkata",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk065": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Bodo",
+  "native_place_state": "Assam",
+  "native_place_district": "Kokrajhar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk066": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Senior Secondary Level at School (10+2)",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk067": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Gujarati",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Sabarkantha",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk068": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Hindi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Pune",
+  "highest_qualification": "Under Graduate Student",
+  "job_category": "Freelance",
+  "occupation_domain": "Financial Services (Banking and Insurance)"
+ },
+ "spk069": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Urban",
+  "highest_qualification": "Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk070": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Kashmiri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Srinagar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk071": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "South Goa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk072": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Malappuram",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk073": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Nepali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kalimpong",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Social service"
+ },
+ "spk074": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Sundergarh",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk075": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Telugu",
+  "native_place_state": "Andhra Pradesh",
+  "native_place_district": "Prakasam",
+  "highest_qualification": "Under Graduate Student",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk076": {
+  "gender": "Male",
+  "age-group": "18-30",
+  "primary_language": "Urdu",
+  "native_place_state": "Bihar",
+  "native_place_district": "Gaya",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk077": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Nagaon",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk078": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "Kolkata",
+  "highest_qualification": "Graduate",
+  "job_category": "Freelance",
+  "occupation_domain": "Entertainment"
+ },
+ "spk079": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Bodo",
+  "native_place_state": "Assam",
+  "native_place_district": "Kokrajhar",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk080": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk081": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Gujarati",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Sabarkantha",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk082": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Hindi",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Vadodara",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk083": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Urban",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk084": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Shimoga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk085": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Kashmiri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Anantnag",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk086": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "North Goa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk087": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Darbhanga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk088": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Samastipur",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk089": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Sitamarhi",
+  "highest_qualification": "Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk090": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Palakkad",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk091": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Marathi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Raigad",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk092": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Punjabi",
+  "native_place_state": "Punjab",
+  "native_place_district": "Mansa",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Government"
+ },
+ "spk093": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Sindhi",
+  "native_place_state": "Rajasthan",
+  "native_place_district": "Ajmer",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Government"
+ },
+ "spk094": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Tamil",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Bangalore Rural",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk095": {
+  "gender": "Male",
+  "age-group": "30-45",
+  "primary_language": "Urdu",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Ahmedabad",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk096": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Bodo",
+  "native_place_state": "Assam",
+  "native_place_district": "Udalguri",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Freelance",
+  "occupation_domain": "Education and Research"
+ },
+ "spk097": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Dogri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Jammu",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Retail"
+ },
+ "spk098": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Gujarati",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Amreli",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Part Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk099": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Kannada",
+  "native_place_state": "Karnataka",
+  "native_place_district": "Shimoga",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Manufacturing"
+ },
+ "spk100": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Kashmiri",
+  "native_place_state": "Jammu Kashmir",
+  "native_place_district": "Srinagar",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk101": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Malayalam",
+  "native_place_state": "Kerala",
+  "native_place_district": "Pathanamthitta",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Government"
+ },
+ "spk102": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Nepali",
+  "native_place_state": "Meghalaya",
+  "native_place_district": "Ri Bhoi",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk103": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Puri",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk104": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Tamil",
+  "native_place_state": "Tamil Nadu",
+  "native_place_district": "Karur",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Information and Media"
+ },
+ "spk105": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Telugu",
+  "native_place_state": "Telangana",
+  "native_place_district": "Hyderabad",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Full Time",
+  "occupation_domain": "Education and Research"
+ },
+ "spk106": {
+  "gender": "Male",
+  "age-group": "45-60",
+  "primary_language": "Urdu",
+  "native_place_state": "Gujarat",
+  "native_place_district": "Ahmedabad",
+  "highest_qualification": "Diploma Holder",
+  "job_category": "Other",
+  "occupation_domain": "Government"
+ },
+ "spk107": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Assamese",
+  "native_place_state": "Assam",
+  "native_place_district": "Biswanath",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Education and Research"
+ },
+ "spk108": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Bengali",
+  "native_place_state": "West Bengal",
+  "native_place_district": "South 24 Parganas",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Financial Services (Banking and Insurance)"
+ },
+ "spk109": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Kannada",
+  "native_place_state": "Telangana",
+  "native_place_district": "Hyderabad",
+  "highest_qualification": "Post Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Technology and Services"
+ },
+ "spk110": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Konkani",
+  "native_place_state": "Goa",
+  "native_place_district": "North Goa",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Financial Services (Banking and Insurance)"
+ },
+ "spk111": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Maithili",
+  "native_place_state": "Bihar",
+  "native_place_district": "Madhubani",
+  "highest_qualification": "Doctoral (PhD) or higher level",
+  "job_category": "Freelance",
+  "occupation_domain": "Government"
+ },
+ "spk112": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Marathi",
+  "native_place_state": "Maharashtra",
+  "native_place_district": "Solapur",
+  "highest_qualification": "Graduate",
+  "job_category": "Full Time",
+  "occupation_domain": "Healthcare (Medical &amp; Pharma)"
+ },
+ "spk113": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Odia",
+  "native_place_state": "Odisha",
+  "native_place_district": "Sundergarh",
+  "highest_qualification": "Graduate",
+  "job_category": "Freelance",
+  "occupation_domain": "Education and Research"
+ },
+ "spk114": {
+  "gender": "Male",
+  "age-group": "60+",
+  "primary_language": "Punjabi",
+  "native_place_state": "Punjab",
+  "native_place_district": "Rupnagar",
+  "highest_qualification": "Graduate",
+  "job_category": "Other",
+  "occupation_domain": "Government"
+ }
+}

@@ -1,0 +1,5 @@
+I have attached 10 short synthesized speech recordings. E1, E2a, E2b, E3 and E4 are in English (Indian accent), and T1, T2a, T2b, T3 and T4 are in Telugu.
+
+For each file, write down exactly what you hear, word for word, in the language's own script. Do not correct, guess or complete anything. If a word is unclear, write it the way it sounds and mark it with (unclear). Mark any long pause as [pause].
+
+Present the answer as a list in the order E1, E2a, E2b, E3, E4, T1, T2a, T2b, T3, T4.

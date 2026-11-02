@@ -1,18 +1,21 @@
+""" Validation loss of a FastSpeech 2 model (upstream evaluate.py).
+
+    python evaluate.py --config ../English/config.yaml --restore_step 9000
+
+[MOD] Reads the single per-language config.yaml and also returns the loss
+values, which train.py writes to logs/val_losses.csv.
+"""
+
 import argparse
-import os
 
 import torch
-import yaml
-import torch.nn as nn
 from torch.utils.data import DataLoader
 
-from utils.model import get_model, get_vocoder
-from utils.tools import to_device, log, synth_one_sample
+from runtime import load_config
+from utils.model import get_model
+from utils.tools import to_device, log, synth_one_sample, device
 from model import FastSpeech2Loss
 from dataset import Dataset
-
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 def evaluate(model, step, configs, logger=None, vocoder=None):
@@ -83,38 +86,16 @@ def evaluate(model, step, configs, logger=None, vocoder=None):
             tag="Validation/step_{}_{}_synthesized".format(step, tag),
         )
 
-    return message
+    return message, loss_means  # [MOD]
 
 
 if __name__ == "__main__":
-
     parser = argparse.ArgumentParser()
-    parser.add_argument("--restore_step", type=int, default=30000)
-    parser.add_argument(
-        "-p",
-        "--preprocess_config",
-        type=str,
-        required=True,
-        help="path to preprocess.yaml",
-    )
-    parser.add_argument(
-        "-m", "--model_config", type=str, required=True, help="path to model.yaml"
-    )
-    parser.add_argument(
-        "-t", "--train_config", type=str, required=True, help="path to train.yaml"
-    )
+    parser.add_argument("--config", required=True, help="English/config.yaml or Telugu/config.yaml")
+    parser.add_argument("--restore_step", type=int, required=True)
     args = parser.parse_args()
 
-    # Read Config
-    preprocess_config = yaml.load(
-        open(args.preprocess_config, "r"), Loader=yaml.FullLoader
-    )
-    model_config = yaml.load(open(args.model_config, "r"), Loader=yaml.FullLoader)
-    train_config = yaml.load(open(args.train_config, "r"), Loader=yaml.FullLoader)
-    configs = (preprocess_config, model_config, train_config)
-
-    # Get model
-    model = get_model(args, configs, device, train=False).to(device)
-
-    message = evaluate(model, args.restore_step, configs)
+    configs = load_config(args.config)
+    model = get_model(args, configs, device, train=False)
+    message, _ = evaluate(model, args.restore_step, configs)
     print(message)

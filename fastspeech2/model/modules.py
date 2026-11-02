@@ -1,17 +1,12 @@
 import os
 import json
-import copy
-import math
 from collections import OrderedDict
 
 import torch
 import torch.nn as nn
 import numpy as np
-import torch.nn.functional as F
 
 from utils.tools import get_mask_from_lengths, pad
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 class VarianceAdaptor(nn.Module):
@@ -120,8 +115,9 @@ class VarianceAdaptor(nn.Module):
             )
             x = x + pitch_embedding
         if self.energy_feature_level == "phoneme_level":
+            # [MOD] upstream passed p_control here, so energy control had no effect
             energy_prediction, energy_embedding = self.get_energy_embedding(
-                x, energy_target, src_mask, p_control
+                x, energy_target, src_mask, e_control
             )
             x = x + energy_embedding
 
@@ -142,8 +138,9 @@ class VarianceAdaptor(nn.Module):
             )
             x = x + pitch_embedding
         if self.energy_feature_level == "frame_level":
+            # [MOD] same p_control fix as above
             energy_prediction, energy_embedding = self.get_energy_embedding(
-                x, energy_target, mel_mask, p_control
+                x, energy_target, mel_mask, e_control
             )
             x = x + energy_embedding
 
@@ -177,17 +174,13 @@ class LengthRegulator(nn.Module):
         else:
             output = pad(output)
 
-        return output, torch.LongTensor(mel_len).to(device)
+        return output, torch.LongTensor(mel_len).to(x.device)  # [MOD] was global device
 
     def expand(self, batch, predicted):
-        out = list()
-
-        for i, vec in enumerate(batch):
-            expand_size = predicted[i].item()
-            out.append(vec.expand(max(int(expand_size), 0), -1))
-        out = torch.cat(out, 0)
-
-        return out
+        # [MOD] one repeat_interleave instead of a loop that called .item() for every
+        # phoneme and synced the device each time (very slow on MPS)
+        repeats = torch.clamp(predicted.long(), min=0)
+        return torch.repeat_interleave(batch, repeats, dim=0)
 
     def forward(self, x, duration, max_len):
         output, mel_len = self.LR(x, duration, max_len)

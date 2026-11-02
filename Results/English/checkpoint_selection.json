@@ -1,0 +1,91 @@
+{
+ "selected_step": 9000,
+ "rule": "validation loss levels off from step 6000 in both languages, and among those checkpoints the one with the lowest Whisper WER is used",
+ "val_total_loss": {
+  "1000": 2.7387,
+  "2000": 2.6505,
+  "3000": 2.6098,
+  "4000": 2.5438,
+  "5000": 2.5357,
+  "6000": 2.5123,
+  "7000": 2.5124,
+  "8000": 2.5093,
+  "9000": 2.5099,
+  "10000": 2.5165,
+  "11000": 2.5156,
+  "12000": 2.5171
+ },
+ "best_val_step": 8000,
+ "asr_eval_colab": {
+  "model": "openai/whisper-small.en",
+  "utterances": 60,
+  "words": 674,
+  "references": "normalised transcripts from val.txt (the raw recordings were not on Colab)",
+  "results": {
+   "1000": {
+    "WER_%": 35.9,
+    "CER_%": 21.7
+   },
+   "2000": {
+    "WER_%": 27.9,
+    "CER_%": 16.2
+   },
+   "3000": {
+    "WER_%": 84.9,
+    "CER_%": 39.8
+   },
+   "4000": {
+    "WER_%": 18.1,
+    "CER_%": 10.0
+   },
+   "5000": {
+    "WER_%": 15.9,
+    "CER_%": 8.6
+   },
+   "6000": {
+    "WER_%": 15.1,
+    "CER_%": 8.1
+   },
+   "7000": {
+    "WER_%": 15.6,
+    "CER_%": 8.9
+   },
+   "8000": {
+    "WER_%": 17.4,
+    "CER_%": 9.6
+   },
+   "9000": {
+    "WER_%": 15.0,
+    "CER_%": 7.7
+   },
+   "10000": {
+    "WER_%": 15.1,
+    "CER_%": 8.6
+   },
+   "11000": {
+    "WER_%": 15.7,
+    "CER_%": 8.5
+   },
+   "12000": {
+    "WER_%": 16.0,
+    "CER_%": 8.6
+   }
+  },
+  "source": "colab/train_English.ipynb"
+ },
+ "asr_eval_local": {
+  "references": "original transcripts (.raw files), 60 sentences, 680 words",
+  "checkpoint": 9000,
+  "results": {
+   "9000": {
+    "WER_%": 15.1,
+    "CER_%": 8.6
+   },
+   "real": {
+    "WER_%": 7.1,
+    "CER_%": 4.1
+   }
+  }
+ },
+ "listening": "the selected checkpoint was also checked by ear on the ten test sentences"
+}

@@ -1,0 +1,93 @@
+{
+ "selected_step": 6000,
+ "rule": "validation loss levels off from step 6000 in both languages, and among those checkpoints the one with the lowest Whisper WER is used",
+ "val_total_loss": {
+  "1000": 2.3804,
+  "2000": 2.2085,
+  "3000": 2.2283,
+  "4000": 2.1716,
+  "5000": 2.1443,
+  "6000": 2.1279,
+  "7000": 2.1063,
+  "8000": 2.1221,
+  "9000": 2.1069,
+  "10000": 2.1095,
+  "11000": 2.1077,
+  "12000": 2.1088
+ },
+ "best_val_step": 7000,
+ "asr_eval_colab": {
+  "model": "openai/whisper-large-v3-turbo",
+  "utterances": 60,
+  "words": 1906,
+  "references": "normalised transcripts from val.txt (the raw recordings were not on Colab)",
+  "results": {
+   "1000": {
+    "WER_%": 38.0,
+    "CER_%": 33.5
+   },
+   "2000": {
+    "WER_%": 27.7,
+    "CER_%": 19.0
+   },
+   "3000": {
+    "WER_%": 24.6,
+    "CER_%": 15.2
+   },
+   "4000": {
+    "WER_%": 24.0,
+    "CER_%": 14.2
+   },
+   "5000": {
+    "WER_%": 26.7,
+    "CER_%": 17.9
+   },
+   "6000": {
+    "WER_%": 23.9,
+    "CER_%": 15.0
+   },
+   "7000": {
+    "WER_%": 25.8,
+    "CER_%": 16.1
+   },
+   "8000": {
+    "WER_%": 25.1,
+    "CER_%": 15.0
+   },
+   "9000": {
+    "WER_%": 26.0,
+    "CER_%": 16.5
+   },
+   "10000": {
+    "WER_%": 26.9,
+    "CER_%": 17.4
+   },
+   "11000": {
+    "WER_%": 27.1,
+    "CER_%": 18.6
+   },
+   "12000": {
+    "WER_%": 28.1,
+    "CER_%": 17.7
+   }
+  },
+  "source": "colab/train_Telugu.ipynb"
+ },
+ "asr_eval_local": {
+  "references": "original transcripts (.raw files), 60 sentences, 1906 words",
+  "checkpoint": 6000,
+  "command": "python scripts/asr_eval.py checkpoints Telugu 6000",
+  "run": "2026-11-02 17:58 to 18:07 IST, Apple MPS",
+  "results": {
+   "6000": {
+    "WER_%": 24.4,
+    "CER_%": 14.9
+   },
+   "real": {
+    "WER_%": 25.4,
+    "CER_%": 16.7
+   }
+  }
+ },
+ "listening": "the selected checkpoint was also checked by ear on the ten test sentences"
+}

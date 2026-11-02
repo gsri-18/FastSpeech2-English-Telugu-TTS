@@ -14,11 +14,14 @@ import audio as Audio
 
 
 class Preprocessor:
-    def __init__(self, config):
+    def __init__(self, config, split=None):
         self.config = config
+        # [MOD] optional dict with fixed train and val basename lists, so the split
+        # is decided at data selection time instead of by a shuffle here
+        self.split = split
         self.in_dir = config["path"]["raw_path"]
         self.out_dir = config["path"]["preprocessed_path"]
-        self.val_size = config["preprocessing"]["val_size"]
+        self.val_size = config["preprocessing"].get("val_size", 512)  # [MOD] optional with a split
         self.sampling_rate = config["preprocessing"]["audio"]["sampling_rate"]
         self.hop_length = config["preprocessing"]["stft"]["hop_length"]
 
@@ -64,9 +67,16 @@ class Preprocessor:
 
         # Compute pitch, energy, duration, and mel-spectrogram
         speakers = {}
-        for i, speaker in enumerate(tqdm(os.listdir(self.in_dir))):
+        # [MOD] only speaker sub-directories (raw_path also holds split.json etc.),
+        # sorted so speaker ids are deterministic across machines
+        speaker_dirs = sorted(
+            d for d in os.listdir(self.in_dir)
+            if os.path.isdir(os.path.join(self.in_dir, d))
+        )
+        skipped = 0
+        for i, speaker in enumerate(tqdm(speaker_dirs)):
             speakers[speaker] = i
-            for wav_name in os.listdir(os.path.join(self.in_dir, speaker)):
+            for wav_name in sorted(os.listdir(os.path.join(self.in_dir, speaker))):
                 if ".wav" not in wav_name:
                     continue
 
@@ -74,13 +84,17 @@ class Preprocessor:
                 tg_path = os.path.join(
                     self.out_dir, "TextGrid", speaker, "{}.TextGrid".format(basename)
                 )
-                if os.path.exists(tg_path):
-                    ret = self.process_utterance(speaker, basename)
-                    if ret is None:
-                        continue
-                    else:
-                        info, pitch, energy, n = ret
-                    out.append(info)
+                # [MOD] upstream fell through to partial_fit() with the previous
+                # utterance's pitch/energy when a TextGrid was missing.
+                if not os.path.exists(tg_path):
+                    skipped += 1
+                    continue
+                ret = self.process_utterance(speaker, basename)
+                if ret is None:
+                    skipped += 1
+                    continue
+                info, pitch, energy, n = ret
+                out.append(info)
 
                 if len(pitch) > 0:
                     pitch_scaler.partial_fit(pitch.reshape((-1, 1)))
@@ -88,6 +102,7 @@ class Preprocessor:
                     energy_scaler.partial_fit(energy.reshape((-1, 1)))
 
                 n_frames += n
+        print("Skipped {} utterances (no alignment / unusable pitch)".format(skipped))
 
         print("Computing statistic quantities ...")
         # Perform normalization if necessary
@@ -142,13 +157,21 @@ class Preprocessor:
         random.shuffle(out)
         out = [r for r in out if r is not None]
 
+        if self.split is not None:  # [MOD] the committed split decides train and val
+            val_names = set(self.split["val"])
+            train_out = [m for m in out if m.split("|")[0] not in val_names]
+            val_out = [m for m in out if m.split("|")[0] in val_names]
+        else:
+            train_out, val_out = out[self.val_size :], out[: self.val_size]
+
         # Write metadata
         with open(os.path.join(self.out_dir, "train.txt"), "w", encoding="utf-8") as f:
-            for m in out[self.val_size :]:
+            for m in train_out:
                 f.write(m + "\n")
         with open(os.path.join(self.out_dir, "val.txt"), "w", encoding="utf-8") as f:
-            for m in out[: self.val_size]:
+            for m in val_out:
                 f.write(m + "\n")
+        print("train.txt: {} utts, val.txt: {} utts".format(len(train_out), len(val_out)))
 
         return out
 
@@ -160,7 +183,9 @@ class Preprocessor:
         )
 
         # Get alignments
-        textgrid = tgt.io.read_textgrid(tg_path)
+        # [MOD] MFA 2 and later writes pauses as empty intervals. tgt drops those by
+        # default, and the gaps make the durations fall short of the mel length.
+        textgrid = tgt.io.read_textgrid(tg_path, include_empty_intervals=True)
         phone, duration, start, end = self.get_alignment(
             textgrid.get_tier_by_name("phones")
         )
@@ -169,7 +194,7 @@ class Preprocessor:
             return None
 
         # Read and trim wav files
-        wav, _ = librosa.load(wav_path)
+        wav, _ = librosa.load(wav_path, sr=self.sampling_rate)  # [MOD] explicit sr
         wav = wav[
             int(self.sampling_rate * start) : int(self.sampling_rate * end)
         ].astype(np.float32)
@@ -260,6 +285,8 @@ class Preprocessor:
         end_idx = 0
         for t in tier._objects:
             s, e, p = t.start_time, t.end_time, t.text
+            if p == "":
+                p = "sp"  # [MOD] MFA 2+ silence
 
             # Trim leading silences
             if phones == []:

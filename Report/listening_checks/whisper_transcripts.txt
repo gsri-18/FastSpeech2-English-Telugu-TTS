@@ -1,0 +1,28 @@
+Whisper transcripts of Results/<Lang>/test_generated_audios/, run 2026-11-02 00:18 IST
+transformers 5.22.1, torch 2.15.0, models openai/whisper-small.en (English) and openai/whisper-large-v3-turbo with language telugu (Telugu)
+Hub revisions whisper-small.en e8727524f962ee844a7319d92be39ac1bd25655a and whisper-large-v3-turbo 41f01f3fe87f28c78e2fbf8b568835947dd65ed9, pretrained weights with no fine-tuning, greedy decoding, fp32, Apple MPS, audio resampled to 16 kHz
+Below is the complete output of each command, unedited.
+
+$ python scripts/asr_eval.py tests English
+W1102 00:19:02.297000 7549 site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] Using custom `forced_decoder_ids` from the (generation) config. This is deprecated in favor of the `task` and `language` flags/config options.
+[transformers] Passing `generation_config` together with generation-related arguments=({'begin_suppress_tokens', 'suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+E1    The entire disestablishmentism movement in considerable momentum during the parliamentary proceedings.
+E2a   The orchestra's conduct during the ceremony was praised by the audience.
+E2b   The researchers will conduct an experiment to evaluate the proposed method.
+E3    The item of the orchestra changed unexpectedly.
+E4    The meeting will start at 10 45 when amount while member for the 26th someone else should arrive one time.
+
+$ python scripts/asr_eval.py tests Telugu
+W1102 00:19:12.696000 7561 site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] Passing `generation_config` together with generation-related arguments=({'suppress_tokens', 'begin_suppress_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer WhisperTokenizer. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+T1    Neuro Pharmacological పరిసోధనలు అనుతనా ఉషదాల ప్రభావా నివిస్లేశిం చర్.
+T2a   తాడు పైయతని పట్టు చాలా బలంగా ఉంది.
+T2b   ఆమె పట్టు చీరను ధరించి వేడు కకు వచ్చింది.
+T3    పులి అడవిలో ని సద్ధంగా నడిచింది
+T4    ఈ సమావేసం రిండు వేల ఇరవై ఆరు నవంబర పన్యండవతేది ఉదేయం పదిగంటల నల భైయిదు నిమి శాలకు ప్రారంబమ ఉతుంది సమయానికి సిద్ధంగా ఉంచండి
+
